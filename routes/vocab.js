@@ -2,23 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 // Home page route
-router.get('/vocab/lesson-18',function(req, res) {
-  var
+router.get('/lesson-18',function(req, res) {
+  let lesson_18_vocab = require('./../vocabulary/lessons/lesson-18.json');
+  console.log(lesson_18_vocab);
 	//res.sendFile(__dirname + '/client/views/index.html');
-  res.render('log-in');
-});
-
-router.post('/login-request', function(req, res) {
-  var username = req.body.username;
-  var password = req.body.password;
-
-  console.log('Username: ' + username);
-  console.log('Password: ' + password);
-
-  //req.session.user = user;
-
-  // We want to change this to be either success or failure, with a message
-  res.send({status: 'success'});
+  //res.render('flashcard-session.ejs', {vocab: lesson_18_vocab});
 });
 
 

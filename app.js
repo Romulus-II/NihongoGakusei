@@ -21,8 +21,10 @@ app.use(session({secret: "abdj348t01ignjfq0ifjdkaf", resave: false, saveUninitia
 
 
 var routes = require('./routes/index.js');
+var vocab_routes = require('./routes/vocab.js');
 
 app.use('/', routes);
+app.use('/vocab', vocab_routes);
 
 serv.listen(5000);
 console.log("Server started.");
