@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=lesson_name%> Vocab Review</title>
+    <link rel="stylesheet" type="text/css" href="/client/stylesheets/flashcard-review.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="nav_bar">
+      <h1>Future Nav Bar</h1>
+    </div>
+
+    <!-- Used for querying purposes -->
+    <div id="indicator" style="display: none"><%=lesson_name%></div>
+
+    <div id="main-flashcard"></div>
+
+    <div id="answers"></div>
+
+    <script src="/client/scripts/flashcards/review-session.js"></script>
+    <script src="/client/scripts/flashcards/start-review.js"></script>
+    <script src="/client/scripts/flashcards/fetch-vocab.js"></script>
+
+    <div id="missed_vocab" style="display: none"></div>
+
+  </body>
+</html>
